@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>astoriaTrainingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:astoriaTrainingAPI.Controllers.DashboardController.GetEmployeeCount">
+            <summary>
+            This method is used to count of resigned and active employee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.DashboardController.GetworkingHourPerDay">
+            <summary>
+            This method is used to count of working hours for employees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.DashboardController.GetEmployeeSalary">
+            <summary>
+            This method is used to get employee salary
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetEmployeeAllowanceDetail">
+            <summary>
+            This method is used to get Employee Allowance details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetEmployeeAllowanceDetail(System.Int64)">
+            <summary>
+            This methods is used to get employee allowance details by id
+            </summary>
+            <param name="id">ID should be in integer</param>
+            <returns>Returns EmployeeAllowanceDetails Entity</returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetCredential(System.String,System.String)">
+            <summary>
+            This method is for Gmail and password
+            </summary>
+            <param name="userID">Required UserName</param>
+            <param name="password">Required Password</param>
+            <returns>Returns UserInfo </returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetAllAllowance">
+            <summary>
+            This method is used for all allowances in the list
+            </summary>
+            <returns> returns AllowanceMAster</returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAttendancesController.GetEmployeeAttendance(System.String,System.Int32)">
+            <summary>
+            This method is for getting all attendance according to clockdate and company id
+            </summary>
+            <param name="FilterClockDate">clock date should be in right format</param>
+            <param name="FilterCompanyID"> Company Id should be in integer</param>
+            <returns>Attendance</returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.EmployeeAttendancesController.PostEmployeeAttendance(System.Collections.Generic.List{astoriaTrainingAPI.Models.EmployeeAttendance},System.Boolean)">
+            <summary>
+            This method is for posting the data
+            </summary>
+            <param name="employeeAttendanceList">fill all the fields of employee attendance list</param>
+            <param name="EmployeeKey">Pass EmployeeKey</param>
+            <returns>ActionResult</returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Controllers.UserInfoController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            This method is used saving new user in UserInfo table of SQL Server database.
+            </summary>
+            <param name="userInfo">userInfo</param>
+            <returns></returns>
+        </member>
+        <member name="M:astoriaTrainingAPI.Models.EmployeeMastersController.GetEmployees">
+            <summary>
+            This method is for getting all employees
+            </summary>
+            <returns>It will return us employee class</returns>
+        </member>
+    </members>
+</doc>
